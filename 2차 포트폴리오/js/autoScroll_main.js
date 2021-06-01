@@ -23,8 +23,6 @@ $(function () { ///////////jQB//////////////////////////
 
     $(window).resize(function () {
 
-        console.log("리사이즈!");
-
         location.reload();
 
     }); ////// resize /////////////////
@@ -35,7 +33,7 @@ $(function () { ///////////jQB//////////////////////////
 
     if (mob) {
         // 전체 페이지 수
-        let totnun = 7;
+        let totnum = 7;
 
         ///// 1.터치시작시 화면 터치위치값 변수에 넣기 //////
         // 대상: document

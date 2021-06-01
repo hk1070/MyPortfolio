@@ -9,8 +9,6 @@ console.log("모바일:" + mob);
 $(function () { /// jQB ///////////////////
     $(window).resize(function () {
 
-        console.log("리사이즈!");
-
         location.reload();
 
     }); ////// resize////////////////

@@ -419,15 +419,6 @@ ul.sub > li a {
     height: 32px;
 }
 
-/*상단으로 이동 버튼 박스*/
-.btn2 {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 60px;
-}
 
 /*다음페이지 이동 버튼1(5,6,7 페이지 제외) */
 .btn_next {
@@ -452,7 +443,6 @@ ul.sub > li a {
 }
 
 /*버튼 포커스 없애기*/
-.btn_top:focus,
 .btn_next:focus,
 .btn_next2:focus {
     outline: none;
@@ -564,6 +554,7 @@ ul.sub > li a {
 }
 
 .p7txt > span:nth-child(1) {
+    margin-top: 50px;
     font: 3.5rem 'Roboto', sans-serif;
 }
 
