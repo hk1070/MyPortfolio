@@ -1,0 +1,55 @@
+@charset "utf-8";
+/*core.css - 공통핵심*/
+
+/*****************공통class******************/
+
+/*속박스*/
+.inbox {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    /*가로중앙정렬*/
+    /*outline: 2px dashed red;*/
+}
+
+/*비율유지박스*/
+.rbx {
+    position: relative;
+    /*비율유지 속박스때문에 부모자격을 줘야한다!*/
+}
+
+.rbx::before {
+    content: "";
+    display: block;
+    padding-top: 720px;
+    /*자식요소의 패딩탑값 %는 부모의 가로크기를 기준한다!*/
+}
+
+.rbx2 {
+    position: relative;
+}
+
+.rbx2::before {
+    content: "";
+    display: block;
+    padding-top: 400px;
+}
+
+/*비율유지 속박스*/
+/*비율유지패딩탑이 본문요소를 밀어내기때문에 이것을 감싸서
+비율유지 박스 내부에 있도록 해주는 장치다!*/
+.ibx {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*IR(Image Replacement) class*/
+.bld {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}

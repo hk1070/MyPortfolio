@@ -1,0 +1,1168 @@
+@charset "utf-8";
+/* 카카오영입 메인페이지 CSS - main.css */
+
+@import url(grid_bg.css);
+@import url(grid_set.css);
+@import url(core.css);
+@import url(reset.css);
+
+html,
+body {
+    height: 100%;
+}
+
+/*상단영역+배너영역 전체박스*/
+.wrapbox {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/*각 영역별 높이값*/
+/*************A.상단영역************************8*/
+
+/*상단영역 .top에 class on을 할때의 설정*****/
+.top.on #top {
+    background-color: #fff;
+
+}
+
+.top.on .wlogo {
+    display: none;
+}
+
+.top.on .blogo {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 108px;
+    height: 23px;
+}
+
+.top.on .gnb ul > li.sm::before {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.top.on .gnb ul > li > a {
+    color: #000;
+}
+
+.top.on .gnb ul > li:hover > a {
+    text-decoration: underline;
+}
+
+
+.top.on .login a {
+    color: #000;
+}
+
+.top.on .login > a:hover {
+    text-decoration: underline;
+}
+
+/*삼각형버튼*/
+.top.on .login .sbtn {
+    position: absolute;
+    top: 8px;
+    width: 8px;
+    height: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #666;
+    margin-left: 6px;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+}
+
+/*******************************************/
+
+/*상단영역 기본 설정*/
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.t1 {
+
+    height: 60px;
+}
+
+.gnbx {
+    padding: 0;
+}
+
+/*로고*/
+#logo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#logo img {
+    width: 108px;
+    height: 23px;
+}
+
+.blogo {
+    display: none;
+}
+
+/*gnb메뉴*/
+.gnb {
+    width: 100%;
+    padding: 0;
+}
+
+/*gnb 메뉴 일정한 넓이,높이 설정*/
+.gnb ul > li {
+    text-align: center;
+    width: 15%;
+    height: 60px;
+    margin-left: 20px;
+    font-size: 0.94rem;
+    line-height: 60px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.gnb ul > li > a {
+    color: #fff;
+}
+
+/*상위메뉴 li에 마우스 오버시 밑줄 */
+.gnb ul > li:hover > a {
+    text-decoration: underline;
+}
+
+
+/*.gnb>ul>li에 가상요소로 하위메뉴 배경판 만들기*/
+.gnb ul > li.sm::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    /*처음에 안보임*/
+    background-color: #fff;
+}
+
+/*상위메뉴li중 하위메뉴가 있는 .sm만 hover*/
+.gnb > ul > li.sm:hover::before {
+    height: 60px;
+}
+
+/*서브메뉴 설정*/
+.smenu {
+    position: absolute;
+    /*부모? .gnb*/
+    top: 77px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 0;
+    width: 772px;
+    font-size: 0.94rem;
+    line-height: 1.88rem;
+    overflow: hidden;
+    /*transition: all .2s;*/
+}
+
+.smenu li {
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 37px;
+}
+
+/*상위메뉴에 마우스 오버시 하위메뉴 보이기*/
+/*두번째 메뉴 하위 높이값 60px*/
+.gnb > ul > li:hover .smenu {
+    height: 60px;
+    /*마우스 오버시 높이값 변경*/
+}
+
+.smenu li:hover a {
+    text-decoration: underline;
+}
+
+/*로그인*/
+.login {
+    float: right;
+    position: relative;
+    top: 16px;
+    width: 69px;
+    height: 22px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.login a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.81rem;
+    font-family: "돋움";
+    color: #fff;
+}
+
+.login > a:hover {
+    text-decoration: underline;
+}
+
+/*삼각형버튼*/
+.login .sbtn {
+    position: absolute;
+    top: 8px;
+    width: 8px;
+    height: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+    margin-left: 6px;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+}
+
+/***************모바일 버전 상단영역*********************/
+
+/*햄버거 메뉴버튼*/
+#ham {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 75px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    display: none;
+    /*처음에 안보임*/
+    z-index: 9999;
+
+}
+
+#ham img {
+    width: 27px;
+    height: 15px;
+}
+
+.ham_b {
+    display: none;
+}
+
+
+
+/*모바일버전 로그인 아이콘*/
+.mlogin {
+    float: right;
+    position: relative;
+    top: 8px;
+    width: 58px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+
+}
+
+.mlogin a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+}
+
+
+.mlogin a > img {
+    width: 17px;
+    height: 20px;
+    margin: 15px 0 0 10px;
+}
+
+.bmlogin {
+    display: none;
+}
+
+/*모바일버전 메뉴*/
+.momenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 820px;
+    background-color: #000;
+    z-index: 99;
+    display: none;
+}
+
+/*모바일 메뉴 상단*/
+.mtop {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    z-index: 999;
+}
+/*메뉴닫기버튼박스*/
+.close {
+    position: relative;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+.close img {
+    width: 20px;
+    height: 20px;
+}
+
+/*모바일 gnb 메뉴*/
+.mgnb {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 327px;
+}
+
+.gnblist li {
+    float: left;
+    width: 100%;
+    height: 63px;
+    padding: 16px 0 14px;
+    box-sizing: border-box;
+}
+
+.gnblist a {
+    padding-left: 39px;
+    font-size: 24px;
+    line-height: 33px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+/*모바일 메뉴 하단*/
+.mfooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 283px;
+}
+
+/*언어선택*/
+.langsel {
+    position: relative;
+    width: 80%;
+    height: 40px;
+    padding-left: 40px;
+}
+
+.langsel span {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid #aaa;
+    border-radius: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.txtlang.kr{
+    text-decoration: underline;
+}
+
+.txtlang {
+    display: inline-block;
+    padding-top: 13px;
+    font-size: 13px;
+    line-height: 14px;
+    color: #fff;
+}
+/*하단정보*/
+.mfootinfo{
+    position: relative;
+    height: 107px;
+    font-size: 11px;
+    padding: 15px 0 43px 40px;
+    font-family: "맑은고딕";
+    color: #aaa;
+    box-sizing: border-box;
+}
+.mfootinfo a{
+    color: #aaa;
+}
+
+/*개인정보처리방침, 이용약관 설정*/
+.mfootinfo ul li a {
+    padding-right: 3px;
+}
+
+.mfootinfo ul li:nth-child(2) {
+    padding-left: 5px;
+}
+
+/*copyright txt 설정*/
+.mfootinfo span {
+    display: block;
+    margin-top: 3px;
+}
+
+
+
+
+
+
+/*******************B.배너영역**********************/
+/*메인배너 전체박스*/
+#mban {
+    position: relative;
+}
+
+.mb1 {
+    height: 720px;
+}
+
+/*배너슬라이드*/
+.slide,
+.slide > li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*부모는?.slide>li는 .slide가 부모
+    .slide의 부모는? 비율유지박스의 속박스가 부모가됨(absolute)*/
+    width: 100%;
+    height: 100%;
+}
+
+/*슬라이드 공통*/
+.slide li {
+    opacity: 0;
+    /*안보이게 함*/
+}
+
+/*class on인 슬라이드만 보이게 함*/
+.slide li.on {
+    opacity: 1;
+    z-index: 1;
+
+}
+
+/*슬라이드별 셋팅*/
+.slide li:nth-child(1) {
+    background: url(../images/krew1.jpg) no-repeat center/cover;
+}
+
+.slide li:nth-child(2) {
+    background: url(../images/krew2.jpg) no-repeat center/cover;
+}
+
+.slide li:nth-child(3) {
+    background: url(../images/krew3.jpg) no-repeat center/cover;
+}
+
+.slide li:nth-child(4) {
+    background: url(../images/krew4.jpg) no-repeat center/cover;
+}
+
+.slide li:nth-child(5) {
+    background: url(../images/krew5.jpg) no-repeat center/cover;
+}
+
+.slide li:nth-child(6) {
+    background: url(../images/krew6.jpg) no-repeat center/cover;
+}
+
+.slide li:nth-child(7) {
+    background: url(../images/krew7.jpg) no-repeat center/cover;
+}
+
+.slide li:nth-child(8) {
+    background: url(../images/krew8.jpg) no-repeat center/cover;
+}
+
+.slide li:nth-child(9) {
+    background: url(../images/krew9.jpg) no-repeat center/cover;
+}
+
+/*메인배너 정보박스*/
+.krew_info {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    z-index: 2;
+}
+
+/*인터뷰 링크 박스*/
+.link_itw {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+}
+
+/*크루 부서,이름 */
+.tit_name {
+    position: absolute;
+    top: 45%;
+    font-size: 0.93rem;
+    font-family: "맑은 고딕";
+    color: #fff;
+}
+
+/*크루 멘트*/
+.say {
+    position: absolute;
+    top: 52%;
+    left: 0;
+    font-size: 2.62rem;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+/*인터뷰 바로가기 txt*/
+.icon_itw {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    font-weight: bold;
+    font-size: 0.75rem;
+    color: #FFDC00;
+
+}
+
+/*이동 버튼*/
+#abtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 10%;
+    z-index: 2;
+}
+
+
+#abtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 10%;
+    z-index: 2;
+}
+
+.abtn img {
+    width: 43px;
+    height: 43px;
+}
+
+/*왼쪽버튼*/
+.lbtn {
+    position: absolute;
+    top: 0;
+    left: 20px;
+
+}
+
+/*오른쪽버튼*/
+.rbtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+}
+
+/*배너 페이지 숫자 박스*/
+.pagenum {
+    position: relative;
+    bottom: -70px;
+    width: 100%;
+    height: 30px;
+    z-index: 2;
+}
+
+#pagenum {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 30px;
+    transform: translateX(-50%);
+    font-size: 1.12rem;
+    font-family: "맑은 고딕";
+    text-shadow: 1px 1px 0 #000;
+    color: #fff;
+
+}
+
+/**********************C.배너영역2*********************/
+/*스몰배너 전체박스*/
+.sb1 {
+    width: 100%;
+    height: 400px;
+}
+
+
+/*스몰배너1*/
+.s1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 33.3%;
+    background-color: #dddddd;
+}
+
+/*인사이드 카카오 a태그 설정*/
+.insidek {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*인사이드 카카오 txt*/
+.insidek span {
+    position: absolute;
+    top: 18px;
+    left: 19px;
+    font-size: 0.93rem;
+    z-index: 2;
+}
+
+/*인사이드 카카오 이미지*/
+.insidek img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+}
+
+
+/*스몰배너2*/
+.s2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 33.3%;
+}
+
+/*kakao Tech 이미지*/
+.ktech img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+}
+
+/*kakao Tech txt*/
+.ktech span {
+    position: absolute;
+    top: 18px;
+    left: 19px;
+    font-size: 0.93rem;
+    z-index: 1;
+}
+
+
+/*스몰배너3*/
+.s3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 33.3%;
+    background-color: #dddddd;
+}
+
+/*카카오스러움 txt*/
+.s3 a > span {
+    position: absolute;
+    top: 18px;
+    left: 19px;
+    font-size: 0.93rem;
+    z-index: 1;
+}
+
+/*업무 스타일 박스*/
+.wstyle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*업무 스타일 txt*/
+.wstxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.87rem;
+    line-height: 3rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+
+/********************D.하단영역********************/
+
+/*하단 왼쪽 영역*/
+.i1 {
+    position: relative;
+    height: 90px;
+}
+
+.infobox {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 250px;
+    height: 41px;
+    font-size: .68rem;
+    font-family: "돋움";
+    color: #333333;
+}
+
+.infobox a:hover {
+    text-decoration: underline;
+}
+
+/*개인정보처리방침, 이용약관 설정*/
+.infobox ul li a {
+    padding-right: 3px;
+}
+
+.infobox ul li:nth-child(2) {
+    padding-left: 5px;
+}
+
+/*copyright txt 설정*/
+.infobox span {
+    display: block;
+    margin-top: 10px;
+}
+
+
+/*하단 오른쪽 영역*/
+.i2 {
+    height: 90px;
+    padding-top: 50px;
+}
+
+/*관련사이트+언어 박스*/
+.infobox2 {
+    position: relative;
+    float: right;
+    top: -30px;
+    width: 145px;
+    height: 25px;
+    box-sizing: border-box;
+
+}
+
+.infobox2 a:hover {
+    text-decoration: underline;
+}
+
+/*관련사이트 전체박스*/
+#fsite {
+    float: left;
+    position: relative;
+    width: 50px;
+    font-size: 0.68rem;
+    font-family: "돋움";
+    color: #333333;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+/*가상요소로 삼각형버튼 만들기*/
+/*삼각형 아래*/
+#fsite .sbtn {
+    position: absolute;
+    top: 3px;
+    width: 8px;
+    height: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #666;
+    margin-left: 6px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #666;
+}
+
+/*삼각형 위*/
+#fsite .sbtn2 {
+    position: absolute;
+    top: 3px;
+    width: 8px;
+    height: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #666;
+    margin-left: 6px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #666;
+    display: none;
+}
+
+/*관련사이트 선택박스*/
+.fsbox {
+    position: absolute;
+    right: -20px;
+    bottom: 20px;
+    width: 119px;
+    height: 82px;
+    padding: 14px 19px 9px;
+    box-sizing: border-box;
+    background: #fff;
+    letter-spacing: -1px;
+    border: 1px solid #bbb;
+    display: none;
+}
+
+.fsbox li a {
+    display: block;
+    width: 79px;
+    height: 20px;
+}
+
+/*언어 전체박스*/
+#lang {
+    float: right;
+    position: relative;
+    width: 50px;
+    font-size: 0.68rem;
+    font-family: "돋움";
+    color: #333333;
+    box-sizing: border-box;
+    white-space: nowrap;
+
+}
+
+/*가상요소로 삼각형버튼 만들기*/
+/*삼각형아래*/
+#lang .sbtn {
+    position: absolute;
+    top: 3px;
+    width: 8px;
+    height: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #666;
+    margin-left: 6px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #666;
+}
+
+/*삼각형 위*/
+#lang .sbtn2 {
+    position: absolute;
+    top: 3px;
+    width: 8px;
+    height: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #666;
+    margin-left: 6px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #666;
+    display: none;
+}
+
+/*언어 선택박스*/
+.langbox {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    width: 75px;
+    height: 62px;
+    padding: 11px 19px 9px;
+    background-color: #fff;
+    letter-spacing: -1px;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+    display: none;
+}
+
+.langbox a {
+    display: block;
+    width: 35px;
+    height: 20px;
+}
+
+/*****************모바일버전 하단박스*****************/
+/*모바일 하단 전체박스*/
+.miwrap {
+    position: relative;
+    height: 100%;
+    top: 640px;
+    left: 0;
+    padding: 0 20px;
+    display: none;
+}
+
+/*모바일 관련사이트*/
+.mfsite {
+    position: relative;
+    height: 45px;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.mfsite > a {
+    display: block;
+    height: 45px;
+    font-size: 1.07rem;
+    line-height: 45px;
+    color: #1e1e1e;
+}
+
+.mfsite a:hover {
+    text-decoration: underline;
+}
+
+/*삼각형 아래*/
+.mfsite .sbtn {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 8px;
+    height: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #666;
+    margin-left: 6px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #666;
+
+}
+
+/*삼각형 위*/
+.mfsite .sbtn2 {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 8px;
+    height: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #666;
+    margin-left: 6px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #666;
+    display: none;
+}
+
+/*관련사이트 정보박스*/
+.mfsbox {
+    padding: 0 0 38px;
+}
+
+.mfsbox li {
+    width: 100%;
+    height: 20px;
+    padding-top: 10px;
+}
+
+.mfsbox li:nth-child(1) {
+    padding-top: 0;
+}
+
+.mfsbox li a {
+    display: block;
+    font-size: 13px;
+    font-family: "맑은 고딕";
+    color: #666666;
+}
+
+/*모바일 언어*/
+.mlang {
+    position: relative;
+    height: 45px;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.mlang > a {
+    display: block;
+    height: 45px;
+    font-size: 1.07rem;
+    line-height: 45px;
+    color: #1e1e1e;
+}
+
+.mlang a:hover {
+    text-decoration: underline;
+}
+
+/*삼각형 아래*/
+.mlang .sbtn {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 8px;
+    height: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #666;
+    margin-left: 6px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #666;
+
+}
+
+/*삼각형 위*/
+.mlang .sbtn2 {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 8px;
+    height: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #666;
+    margin-left: 6px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #666;
+    display: none;
+}
+
+/*언어변경 박스*/
+.mlangbox {
+    display: block;
+    padding: 0 0 38px;
+}
+
+.mlangbox li {
+    width: 100%;
+    height: 20px;
+    padding-top: 10px;
+}
+
+.mlangbox li:nth-child(1) {
+    padding-top: 0;
+}
+
+.mlangbox li a {
+    display: block;
+    font-size: 13px;
+    font-family: "맑은 고딕";
+    color: #666;
+}
+
+/*모바일정보박스*/
+.minfo {
+    position: relative;
+    height: 93px;
+    padding-top: 25px;
+    line-height: 24px;
+    box-sizing: border-box;
+    font-size: 11px;
+    font-family: "돋움";
+    color: #666666;
+}
+
+
+/*개인정보처리방침, 이용약관 설정*/
+.minfo ul li a {
+    padding-right: 3px;
+}
+
+.minfo ul li:nth-child(2) {
+    padding-left: 5px;
+}
+
+/*copyright txt 설정*/
+.minfo span {
+    display: block;
+    margin-top: 3px;
+}
+
+/*하단 버전, 위치 변경박스*/
+.minfobtn {
+    position: relative;
+    width: 100%;
+    height: 63px;
+}
+
+
+/*pc버전 변경박스*/
+.pcbtn {
+    float: left;
+    position: relative;
+    width: 85%;
+    height: 43px;
+    box-sizing: border-box;
+}
+
+.pcbtn a {
+    display: block;
+    height: 41px;
+    font-size: 14px;
+    line-height: 42px;
+    font-family: "맑은 고딕";
+    background-color: #fafafa;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+
+}
+
+.pcbtn a:hover {
+    text-decoration: underline;
+}
+
+/*위로 이동 박스*/
+.topbtn {
+    float: right;
+    position: relative;
+    width: 13%;
+    height: 43px;
+    border: 1px solid #d4d4d4;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+.topbtn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.topbtn img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 16px;
+}
