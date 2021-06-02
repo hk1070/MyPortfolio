@@ -1,6 +1,32 @@
 @charset "utf-8";
 /*라운드어라운드 컵오브테라피 미디어쿼리 - media_CupOfTherapy.css */
 
+/*미디어쿼리 -1250px 이하*/
+@media only screen and (max-width:1250px) {
+
+    #therapy {
+        height: 6000px;
+    }
+
+    .therapybx {
+        width: 900px;
+    }
+
+    .tit {
+        font-size: 3remb;
+    }
+
+    .path ul {
+        font-size: 1.4rem;
+    }
+
+    .content img {
+        width: 750px;
+    }
+}
+
+/*미디어쿼리 -1250px 이하*/
+
 /*모바일 미디어쿼리  - 500px 이하*/
 @media only screen and (max-width:500px) {
 

@@ -1,6 +1,33 @@
 @charset "utf-8";
 /*라운드어라운드 포레스트 미디어쿼리 - media_ForRest.css */
 
+/*미디어쿼리 -1250px 이하*/
+@media only screen and (max-width:1250px) {
+
+    #forrest {
+        height: 1900px;
+    }
+
+    .forrestbx {
+        width: 900px;
+    }
+
+    .tit {
+        font-size: 3remb;
+    }
+
+    .path ul {
+        font-size: 1.4rem;
+    }
+
+    .content img {
+        width: 750px;
+    }
+}
+
+/*미디어쿼리 -1250px 이하*/
+
+
 /*모바일 미디어쿼리  - 500px 이하*/
 @media only screen and (max-width:500px) {
 
@@ -74,7 +101,7 @@
         height: 950px;
         margin-top: 0;
     }
-    
+
     .forrestbx {
         width: 400px;
     }
@@ -83,8 +110,8 @@
         width: 342px;
         height: 640px;
     }
-    
-    .tit{
+
+    .tit {
         font-size: 2.5rem;
     }
 

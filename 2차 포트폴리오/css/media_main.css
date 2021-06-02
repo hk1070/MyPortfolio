@@ -1,6 +1,111 @@
 @charset "utf-8";
 /*라운드어라운드 메인 미디어쿼리 - media_main.css */
 
+/*미디어쿼리 - 1024px이하*/
+@media only screen and (max-width:1250px) {
+
+    /*그린티 스킨케어 영역*/
+    .gimg img {
+        width: 230px;
+        height: 330px;
+    }
+
+    /*베이직 스킨케어 영역*/
+    .bimg img {
+        width: 230px;
+        height: 330px;
+    }
+
+    /*홈프래그런스 영역*/
+    .himg img {
+        width: 230px;
+        height: 330px;
+    }
+
+    /*라이프프래그런스 영역*/
+    .limg img {
+        width: 230px;
+        height: 330px;
+    }
+
+    /*sns 영역*/
+    .snsimg {
+        width: 100%;
+    }
+
+    .snsimg li {
+        width: 250px;
+        height: 250px;
+    }
+
+
+}
+
+/*미디어쿼리 - 1024px이하*/
+
+/*미디어쿼리 -900px 이하*/
+@media only screen and (max-width:900px) {
+
+    /*그린티 스킨케어 영역*/
+    .gimg img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .gtxt > span:nth-child(1) {
+        font: bold 2.5rem/4rem 'Roboto', sans-serif;
+    }
+
+    .gtxt > span:nth-child(2) {
+        font-size: 1.3rem;
+    }
+
+    /*베이직 스킨케어 영역*/
+    .bimg img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .btxt > span:nth-child(1) {
+        font: bold 2.5rem/4rem 'Roboto', sans-serif;
+    }
+
+    .btxt > span:nth-child(2) {
+        font-size: 1.3rem;
+    }
+
+    /*홈프래그런스 영역*/
+    .himg img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .htxt > span:nth-child(1) {
+        font: bold 2.5rem/4rem 'Roboto', sans-serif;
+    }
+
+    .htxt > span:nth-child(2) {
+        font-size: 1.3rem;
+    }
+
+    /*라이프프래그런스 영역*/
+    .limg img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .ltxt > span:nth-child(1) {
+        font: bold 2.5rem/4rem 'Roboto', sans-serif;
+    }
+
+    .ltxt > span:nth-child(2) {
+        font-size: 1.3rem;
+    }
+}
+
+/*미디어쿼리 -900px 이하*/
+
+
 /*모바일 미디어쿼리  - 500px 이하*/
 @media only screen and (max-width:500px) {
 
@@ -387,8 +492,8 @@
         top: 68%;
         width: 80vw;
     }
-    
-    .snsimg li{
+
+    .snsimg li {
         width: 200px;
         height: 200px;
         padding-right: 20px;
