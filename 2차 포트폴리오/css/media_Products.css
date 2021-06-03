@@ -1,6 +1,23 @@
 @charset "utf-8";
 /*라운드어라운드 스토어 미디어쿼리 - media_Stores.css */
 
+/*미디어쿼리 -1250px 이하*/
+@media only screen and (max-width:1250px) {
+
+    
+    .tit {
+        font-size: 3rem;
+    }
+
+    .path ul {
+        font-size: 1.4rem;
+    }
+
+}
+
+/*미디어쿼리 -1250px 이하*/
+
+
 /*모바일 미디어쿼리  - 500px 이하*/
 @media only screen and (max-width:500px) {
 
