@@ -476,16 +476,9 @@
 
 
     /*sns 영역*/
-    #sns {
-        width: 100vw;
-    }
 
     #sns > h3 {
-        font-size: 3.2rem;
-    }
-
-    .sclogo > a {
-        font-size: 1.4rem;
+        font-size: 3rem;
     }
 
     .snsimg {
@@ -495,7 +488,7 @@
 
     .snsimg li {
         width: 200px;
-        height: 200px;
+        height: 150px;
         padding-right: 20px;
     }
 

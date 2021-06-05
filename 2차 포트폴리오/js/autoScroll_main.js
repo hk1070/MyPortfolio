@@ -33,7 +33,7 @@ $(function () { ///////////jQB//////////////////////////
 
     if (mob) {
         // 전체 페이지 수
-        let totnum = 7;
+        let totnum = 9;
 
         ///// 1.터치시작시 화면 터치위치값 변수에 넣기 //////
         // 대상: document
@@ -134,7 +134,7 @@ $(function () { ///////////jQB//////////////////////////
         $(document).on("mousewheel DOMMouseScroll", function (e) {
 
             // 전체 페이지 수 
-            let totnum = 9;
+            let totnum = 7;
 
             // 광스크롤 막기 //////////////////////////////////////
             if (psts === 1) return true;

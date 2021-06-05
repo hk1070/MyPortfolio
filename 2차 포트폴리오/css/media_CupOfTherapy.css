@@ -9,7 +9,7 @@
     }
 
     .therapybx {
-        width: 900px;
+        min-width: 980px;
     }
 
     .tit {
