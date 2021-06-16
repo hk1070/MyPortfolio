@@ -24,5 +24,5 @@
 
 4. 하단의 관련사이트와 언어를 클릭하면 각각에 관련된 리스트가 나타납니다.  
    <img width="60%" src="https://user-images.githubusercontent.com/85146819/122239723-22736380-cefc-11eb-85d6-b52fc020b1c0.gif">  
-
+  
 5 반응형 웹으로 모바일에서 PC버전 확인이 가능합니다.
