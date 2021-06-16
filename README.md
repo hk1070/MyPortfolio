@@ -22,7 +22,7 @@
 
 - 메인 배너 변경
 
-<img width="60%" src="https://user-images.githubusercontent.com/85146819/122231035-1df77c80-cef5-11eb-8806-d31239529c87.gif">
+<img width="60%" src="https://user-images.githubusercontent.com/85146819/122231826-b5f56600-cef5-11eb-9706-23e3e7244ffa.gif">
 
 
 - 새로고침 시 인사이드 카카오 이미지와 카카오스러움 텍스트 변경
