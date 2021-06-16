@@ -33,5 +33,8 @@
 
 - 반응형 웹
 
+|<img width="40%" src="https://user-images.githubusercontent.com/85146819/122242649-767f4780-cefe-11eb-80bb-f51110557721.png"> |<img width="20%" src="https://user-images.githubusercontent.com/85146819/122243138-d675ee00-cefe-11eb-8cb9-999815dfe318.png">|
+
+
 - 모바일에서 PC버전 확인
 
