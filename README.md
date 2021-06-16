@@ -4,10 +4,6 @@
 
 #### Link : https://hk1070.github.io/Portfolio-1/KAKAO
 
-<<<<<<< HEAD
-<br>
-=======
-
 #### - JavaScript와 jQuery를 활용하여 KAKAO 영입 사이트의 메인 페이지를 클론 코딩을 하였습니다.
 
   <img width="60%" src="https://user-images.githubusercontent.com/85146819/122193234-4cfaf780-cecf-11eb-9cf9-23ab5605485e.png">
@@ -30,5 +26,3 @@
    <img width="60%" src="https://user-images.githubusercontent.com/85146819/122239723-22736380-cefc-11eb-85d6-b52fc020b1c0.gif">
 
 5 반응형 웹으로 모바일에서 PC버전 확인이 가능합니다.
-
-> > > > > > > 689fcc17bc28f352354a0273a1043ab4a604d76a
