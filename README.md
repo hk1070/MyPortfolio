@@ -17,7 +17,7 @@
 
 - 마우스 오버시 상단 메뉴 변경
 
-<img width="60%" src="https://user-images.githubusercontent.com/85146819/122236230-4e411a00-cef9-11eb-8190-230a797e3ff9.png">
+<img width="60%" src="https://user-images.githubusercontent.com/85146819/122237541-5f3e5b00-cefa-11eb-9742-3325a8228ef4.gif">
 
 - 메인 배너 변경
 <img width="60%" src="https://user-images.githubusercontent.com/85146819/122237209-1dadb000-cefa-11eb-835c-fd2a74fd5cdc.png">
