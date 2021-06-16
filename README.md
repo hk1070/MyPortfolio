@@ -25,8 +25,7 @@
 
 - 새로고침 시 인사이드 카카오 이미지와 카카오스러움 텍스트 변경
 
-<img width="60%" src="https://user-images.githubusercontent.com/85146819/122234782-1e454700-cef8-11eb-89ef-138b5e49f202.gif">
-
+<img width="60%" src="https://user-images.githubusercontent.com/85146819/122238229-ef7ca000-cefa-11eb-8787-dbb15b9d6b4a.gif">
 
 - 하단의 관련사이트와 언어 선택 박스
 
