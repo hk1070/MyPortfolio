@@ -20,7 +20,8 @@
 <img width="60%" src="https://user-images.githubusercontent.com/85146819/122236230-4e411a00-cef9-11eb-8190-230a797e3ff9.png">
 
 - 메인 배너 변경
-
+<img width="60%" src="https://user-images.githubusercontent.com/85146819/122237209-1dadb000-cefa-11eb-835c-fd2a74fd5cdc.png">
+<img width="60%" src="https://user-images.githubusercontent.com/85146819/122237308-328a4380-cefa-11eb-8766-415308722bcf.png">
 
 - 새로고침 시 인사이드 카카오 이미지와 카카오스러움 텍스트 변경
 
