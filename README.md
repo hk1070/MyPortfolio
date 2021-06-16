@@ -16,6 +16,9 @@
 
 - 상단 메뉴
 
+<img width="60%" src="https://user-images.githubusercontent.com/85146819/122217248-3319de80-cee8-11eb-9849-9eba2de66b10.gif">
+
+
 - 메인 배너 변경
 
 - 새로고침 시 인사이드 카카오 이미지와 카카오스러움 텍스트 변경
