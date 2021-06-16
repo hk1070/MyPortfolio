@@ -17,7 +17,7 @@
 
 - 상단 메뉴
 
-<img width="60%" src="https://user-images.githubusercontent.com/85146819/122218992-f7801400-cee9-11eb-8f6e-9d5e8450358a.gif">
+<img width="60%" src="(https://user-images.githubusercontent.com/85146819/122236230-4e411a00-cef9-11eb-8190-230a797e3ff9.png">
 
 - 메인 배너 변경
 
