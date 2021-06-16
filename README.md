@@ -29,6 +29,8 @@
 
 - 하단의 관련사이트와 언어 선택 박스
 
+<img width="60%" src="https://user-images.githubusercontent.com/85146819/122238667-4a15fc00-cefb-11eb-9416-ed60d8382dbd.png">
+
 - 반응형 웹
 
 - 모바일에서 PC버전 확인
