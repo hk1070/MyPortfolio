@@ -1,3 +1,4 @@
+
 ### KAKAO 영입 Site Clone Coding
 
 ---
@@ -16,7 +17,7 @@
 
 - 상단 메뉴
 
-<img width="60%" src="https://user-images.githubusercontent.com/85146819/122217248-3319de80-cee8-11eb-9849-9eba2de66b10.gif">
+<img width="60%" src="https://user-images.githubusercontent.com/85146819/122217519-75dbb680-cee8-11eb-9a5c-a558bc26a91a.gif">
 
 
 - 메인 배너 변경
