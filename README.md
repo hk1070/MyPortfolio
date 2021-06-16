@@ -6,7 +6,7 @@
 
 #### - JavaScript와 jQuery를 활용하여 KAKAO 영입 사이트의 메인 페이지를 클론 코딩을 하였습니다.
 
-  <img width="60%" src="https://user-images.githubusercontent.com/85146819/122193234-4cfaf780-cecf-11eb-9cf9-23ab5605485e.png">
+<img width="60%" src="https://user-images.githubusercontent.com/85146819/122193234-4cfaf780-cecf-11eb-9cf9-23ab5605485e.png">
 
 ---
 
