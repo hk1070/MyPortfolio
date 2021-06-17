@@ -1,3 +1,4 @@
+
 ### KAKAO 영입 Site Clone Coding
 
 ---
@@ -26,6 +27,6 @@
    <img width="60%" src="https://user-images.githubusercontent.com/85146819/122239723-22736380-cefc-11eb-85d6-b52fc020b1c0.gif">  
   
 5. 반응형 웹으로 모바일에서 PC버전 확인이 가능합니다.  
-   <img width="30%" src="https://user-images.githubusercontent.com/85146819/122335358-1a580a00-cf76-11eb-83dc-7296dc59079a.png"> 
-   <img width="30%" src="https://user-images.githubusercontent.com/85146819/122335407-2f349d80-cf76-11eb-9f5b-fb48eba1d94a.png">
+   <img width="30%" src="https://user-images.githubusercontent.com/85146819/122338065-234ada80-cf7a-11eb-983f-5031f534304a.png"> 
+   <img width="30%" src="https://user-images.githubusercontent.com/85146819/122338093-3067c980-cf7a-11eb-8996-b8ccb7a6cf1b.png">
 
